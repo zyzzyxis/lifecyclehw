@@ -18,7 +18,6 @@ function App() {
   return (
     <>
     <NavBar />
-    <h1 style={{color: PRIMARY_COLOR }}>sdf</h1>
     <Container>
       <Switch>
         <Route exact path='/' component={Home} />
@@ -28,7 +27,7 @@ function App() {
         <Route exact path='/users/:id' component={UserShow} />
 
         <Route exact path='/grades' component={Grades} />
-        
+
         <Route exact path='/skills' component={Skills} />
         <Route exact path='/skills/:id' component={SkillShow} />
 

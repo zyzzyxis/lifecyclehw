@@ -7,7 +7,7 @@ class Api::UsersController < ApplicationController
     end
 
     def show
-      render json: {user:@user, skills: @user.get_skills_with_scores}
+      render json: {user:@user, skills: @user.get_skills_with_scores, ungraded_skills: @user.get_ungraded_skills }
     end
 
     def create

@@ -15,7 +15,8 @@ class Api::GradesController < ApplicationController
       if(grade.save)
         render json: grade
       else
-        render json: {error: @grade.errors}, status: 422
+        # comes back as err.response.data in the error object
+        render json: {error: grade.errors, x:'yo'}, status: 422
       end
     end
 

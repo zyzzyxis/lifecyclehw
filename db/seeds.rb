@@ -25,6 +25,12 @@ Skill.create(name: 'Homework2', description:'Cassino')
  end
 end
 
+Skill.create(name: 'Java', description:'OOP')
+Skill.create(name: 'Vue', description:'Reacts competition')
+
+User.create(name: Faker::Name.name)
+User.create(name: Faker::Name.name)
+
 puts "SKILLZZ SIZE: #{Skill.all.length}"
 puts "USER SIZE: #{User.all.length}"
 puts "GRADE SIZE: #{Grade.all.length}"

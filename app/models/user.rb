@@ -15,4 +15,11 @@ class User < ApplicationRecord
          {skill: skill, score: score}
        end
     end
+
+
+    def get_ungraded_skills
+      ## do this witout the minus 
+      ## Sets
+       Skill.all - self.skills
+    end
 end
