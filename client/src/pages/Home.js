@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+import ReactDOM from 'react-dom'
+import Clock from '../components/Clock'
 
 // functional component
 const Home = () => {
@@ -28,18 +30,10 @@ const Home = () => {
         <div>
             <h1>Home</h1>
             {testData && testData.dataHere}
+            <Clock />
         </div>
     )
 }
 export default Home
 
-// class component
-// class Home extends React.Component {
-//     render() {
-//         return(
-//             <div>
-//                 <h1>Home</h1>
-//             </div>
-//         )
-//     }
-// }
+
